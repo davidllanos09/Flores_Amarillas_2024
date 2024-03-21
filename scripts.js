@@ -37,7 +37,7 @@ function crearFlores(cantidad) {
 
 function mostrarMensaje(n) {
     if (n === 0){
-        showAlert("Para Shirley,\n\nCada segundo lejos de ti se siente como una eternidad. Te extraño más de lo que las palabras pueden expresar. Mi corazón anhela tu presencia y mi alma busca la tuya. Espero con ansias el momento en que estemos juntos nuevamente, compartiendo risas y abrazos. Te extraño mucho más de lo que puedas imaginar.\n\n[Yhonattan]");
+        showAlert("Para Shirley,\n\nEl mundo tiene sus maravillas, pero tu eres la maravilla de mi mundo.\n\n[Yhonattan]");
 
     } else if (n === 1) {
         showAlert("Para Shirley,\n\nQuiza no pude estar presente contigo, pero quiero que sepas que has estado en cada uno de mis pensamientos. Aunque la distancia nos separe en este día, quiero que sientas mi cariño y mi apoyo desde lejos. Eres mi primer pensamiento al despertar y el último al dormir. Espero que este mensaje te haga sentir lo especial que eres para mí, hoy y siempre.\n\nCon cariño,\n\n[Yhonattan]");
