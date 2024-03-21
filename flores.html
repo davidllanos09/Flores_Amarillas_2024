@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Flores Amarillas</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&display=swap">
+    <script type="text/javascript" src="./scripts.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            // Código que quieres ejecutar cuando la página se carga
+            crearFlores(3)
+            
+        });
+        
+    </script>
+</head>
+<body>
+    
+    <div class="flowers-container" id="flowersContainer"></div>
+
+    <div class="modal" onclick="closeEmergent()" id="myModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEmergent()">&times;</span>
+            <p id="customMessage"></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+ /* Estilos CSS para la página principal */
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos en el cuerpo */
+    justify-content: center; /* Centra horizontalmente los elementos en el cuerpo */
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Great Vibes', cursive; /* Fuente para los títulos */
+    font-size: 36px;
+    color: #ffc107; /* Amarillo */
+}
+ /* Estilos CSS para el texto del párrafo */
+p {
+    font-size: 24px; /* Tamaño de fuente más grande para los párrafos */
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    color: #fff;
+}
+.flower-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.flower-button {
+    background-color: #ffc107; /* Amarillo */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/* Estilos CSS para el corazón */
+.heart {
+    width: 100px;
+    height: 90px;
+    position: relative;
+    margin: 10px auto;
+    transform: scale(0.8);
+    animation: pulse 1s infinite alternate;
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* Animación */
+@keyframes pulse {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.te-amo {
+    font-family: 'Pacifico', cursive; /* Fuente romántica */
+    font-size: 34px;
+    color: #ff4d4d; /* Color rojo rosado */
+}
+
+/* Estilos para el contenedor de las flores */
+.flowers-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las flores se envuelvan en múltiples líneas */
+    justify-content: center; /* Centrar las flores horizontalmente */
+    gap: 20px; /* Espacio entre las flores */
+    margin: 20px auto; /* Margen exterior */
+    align-items: center;
+}
+
+/* Estilos para cada flor */
+.flower {
+    height: 220px;
+    width: 200px;
+    position: relative;
+    border-radius: 20px;
+    animation: pulsate 2s infinite;
+}
+
+/* Agrega una animación de pulsación */
+@keyframes pulsate {
+    0% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+/* Estilos para los componentes de la flor */
+.mid {
+    position: absolute;
+    top: calc(10% - 25px); /* La mitad del tamaño del elemento */
+    left: calc(48% - 25px); /* La mitad del tamaño del elemento */
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #000, #ff5e00, #000);
+    z-index: 4;
+    background-size: 5px 5px;
+    filter: drop-shadow(0 0 8px #682600);
+
+}
+
+.Petal1, .Petal2, .Petal3 {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.Petal1 {
+    width: 200px;
+    height: 40px;
+    background: radial-gradient(circle, #ff5e00, #fbd702);
+    top: calc(12% - 25px); /* La mitad del tamaño del elemento */
+    left: calc(12% - 25px); /* La mitad del tamaño del elemento */
+    z-index: 1;
+    filter: drop-shadow(0 0 2px #fbd702);
+}
+
+.Petal2 {
+    width: 200px;
+    height: 40px;
+    top: calc(12% - 25px); /* La mitad del tamaño del elemento */
+    left: calc(12% - 25px); /* La mitad del tamaño del elemento */
+    background: radial-gradient(circle, #ff5e00, #fbd702);
+    z-index: 2; 
+    filter: drop-shadow(0 0 5px #e05200);
+}
+
+.Petal3 {
+    width: 120px;
+    height: 40px;
+    top: calc(13% - 25px); /* La mitad del tamaño del elemento */
+    left: calc(31% - 25px); /* La mitad del tamaño del elemento */
+    filter: drop-shadow(0 0 2px #fbd702);
+    background: radial-gradient(circle, #ff5e00, #ffbb00);
+    z-index: 3;
+    filter: drop-shadow(0 0 5px #e05200);
+}
+
+/* Posiciones de los pétalos */
+.p1 { transform: rotate(22.5deg); }
+.p2 { transform: rotate(67.5deg); }
+.p3 { transform: rotate(110.5deg); }
+.p4 { transform: rotate(157.5deg); }
+
+.p5 { transform: rotate(00deg);}
+.p6 { transform: rotate(90deg); }
+.p7 { transform: rotate(45deg);}
+.p8 { transform: rotate(135deg); }
+
+.p9 { transform: rotate(22.5deg);}
+.p10 { transform: rotate(67.5deg);}
+.p11 { transform: rotate(110.5deg);}
+.p12 { transform: rotate(157.5deg);}
+
+ /* Estilos para la notita */
+.notita {
+    position: absolute;
+    top: calc(30% - 20px); /* Ajustar para que esté casi en el medio verticalmente */
+    left: calc(50% - 30px); /* Ajustar para que esté casi en el medio horizontalmente */
+    background-color: #f5ca7b;
+    z-index: 4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Estilos para la ventana emergente */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(10, 10, 10, 0.5); /* Color de fondo con transparencia */
+  }
+  
+  /* Contenido de la ventana emergente */
+  .modal-content {
+    background-color: rgba(255, 215, 106, 0.5);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ffae00;
+    width: 80%;
+    border-radius: 10px;
+  }
+  
+  /* Botón para cerrar la ventana emergente */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
